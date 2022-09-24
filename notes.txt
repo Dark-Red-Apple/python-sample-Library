@@ -1,0 +1,58 @@
+#desining classes for a very basic library system
+#modules needed: sqlite, json, pyqt5
+Library:
+Library.py:
+		view
+Main classes:
+		Books
+		Customers
+		borrow
+
+books=> id
+		name
+		author
+		summary
+		date_of_first_publication
+		Is_available
+		number_of_copies
+		genres_ids
+		
+		***methods:
+		add()
+		show_info()
+		update()
+		remove()
+genre=>
+		id
+		name
+		
+customers=> 
+		id
+		name
+		family
+		date_of_registration
+		
+		***methods:
+		show_info()
+		update()
+		register()
+		check_out_books()
+		history()
+		remove()
+
+check_out=>
+		id
+		bookId
+		customerId
+		checkout_Date
+		returned_Date
+		
+		***methods:
+		add()
+		show_info()
+		update()
+		remove()
+
+		
+			
+		
