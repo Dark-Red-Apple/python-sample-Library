@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>692</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="mainTabs">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>651</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Home">
+     <attribute name="title">
+      <string>Home</string>
+     </attribute>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>391</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Gabriola</family>
+        <pointsize>36</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>WELCOME TO THIS LIBRARY</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addBooksTab">
+     <attribute name="title">
+      <string>Add book</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bookNameText">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Author</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bookAuthorText">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Date of publication</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bookDateText">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>190</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>summary</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bookSummaryText">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>180</y>
+        <width>301</width>
+        <height>91</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="bookAvailableCheck">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>290</y>
+        <width>59</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Yes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>290</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Is available</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addBookClearButton">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>300</y>
+        <width>62</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addBooktButton">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>300</y>
+        <width>62</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ok</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="CheckoutBooksTab">
+     <attribute name="title">
+      <string>Checkout Books</string>
+     </attribute>
+     <widget class="QListView" name="bookList">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>451</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search by name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>170</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Please Select Books</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchBookText">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>80</y>
+        <width>161</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter costomer id</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="custemerIdText">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="checkoutClearButton">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>280</y>
+        <width>62</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="checkoutButton">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>280</y>
+        <width>62</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ok</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="refreshBooksButton">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>140</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>120</y>
+        <width>151</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>There is a default student with id = 1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="registerCustomerTab">
+     <attribute name="title">
+      <string>Register customer</string>
+     </attribute>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Family</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="customerNameText">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>40</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="accessibleName">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="customerFamilyText">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>90</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>150</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Birthday</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="customerBirthdayText">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>140</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>200</y>
+        <width>39</width>
+        <height>11</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Gender</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="customerFemaleRadio">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>200</y>
+        <width>69</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Female</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+     <widget class="QRadioButton" name="customerMaleRadio">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>200</y>
+        <width>69</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Male</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">buttonGroup</string>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="registerClearButton">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>260</y>
+        <width>62</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="registerButton">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>260</y>
+        <width>62</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Ok</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="customersListTab">
+     <attribute name="title">
+      <string>Customers List</string>
+     </attribute>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Customers List</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="customersList">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>511</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="refreshCustomersButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>20</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="checkoutHistoryTab">
+     <attribute name="title">
+      <string>Checkout History</string>
+     </attribute>
+     <widget class="QListView" name="checkoutHistoryText">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>511</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Checkout History</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="refreshcheckoutsButton">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>20</y>
+        <width>41</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionyg">
+   <property name="text">
+    <string>Register new book</string>
+   </property>
+  </action>
+  <action name="actionList_books">
+   <property name="text">
+    <string>List books</string>
+   </property>
+  </action>
+  <action name="actionCheckout_Books">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Checkout Books</string>
+   </property>
+  </action>
+  <action name="actionUpdate_Customer_Info">
+   <property name="text">
+    <string>Update Customer Info</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
